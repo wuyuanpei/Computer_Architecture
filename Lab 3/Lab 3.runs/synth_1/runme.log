@@ -1,0 +1,658 @@
+
+*** Running vivado
+    with args -log testbench.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source testbench.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source testbench.tcl -notrace
+Command: synth_design -top testbench -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9320 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 729.035 ; gain = 178.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'testbench' [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:24]
+INFO: [Synth 8-3491] module 'arbiter' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/arbiter.vhd:11' bound to instance 'arb1' of component 'arbiter' [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'arbiter' [D:/WorkingStation/Vivado/cse362/Lab 3/arbiter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'arbiter' (1#1) [D:/WorkingStation/Vivado/cse362/Lab 3/arbiter.vhd:20]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.runs/synth_1/.Xil/Vivado-10180-RichardWu/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'mydcm1' of component 'clk_wiz_0' [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.runs/synth_1/.Xil/Vivado-10180-RichardWu/realtime/clk_wiz_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'rsrc' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:11' bound to instance 'rsrc1' of component 'rsrc' [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'rsrc' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:23]
+INFO: [Synth 8-3491] module 'pc' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/pc.vhd:11' bound to instance 'rsrcpc' of component 'pc' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/WorkingStation/Vivado/cse362/Lab 3/pc.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'pc' (2#1) [D:/WorkingStation/Vivado/cse362/Lab 3/pc.vhd:20]
+INFO: [Synth 8-3491] module 'a' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/a.vhd:10' bound to instance 'rsrcareg' of component 'a' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'a' [D:/WorkingStation/Vivado/cse362/Lab 3/a.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'a' (3#1) [D:/WorkingStation/Vivado/cse362/Lab 3/a.vhd:17]
+INFO: [Synth 8-3491] module 'c' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/c.vhd:10' bound to instance 'rsrccreg' of component 'c' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'c' [D:/WorkingStation/Vivado/cse362/Lab 3/c.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'c' (4#1) [D:/WorkingStation/Vivado/cse362/Lab 3/c.vhd:18]
+INFO: [Synth 8-3491] module 'alu' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/alu.vhd:12' bound to instance 'rsrcalu' of component 'alu' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/WorkingStation/Vivado/cse362/Lab 3/alu.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'alu' (5#1) [D:/WorkingStation/Vivado/cse362/Lab 3/alu.vhd:31]
+INFO: [Synth 8-3491] module 'shiftcounter' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/shiftcounter.vhd:11' bound to instance 'rsrcshiftcounter' of component 'shiftcounter' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'shiftcounter' [D:/WorkingStation/Vivado/cse362/Lab 3/shiftcounter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'shiftcounter' (6#1) [D:/WorkingStation/Vivado/cse362/Lab 3/shiftcounter.vhd:17]
+INFO: [Synth 8-3491] module 'regfile' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/regfile.vhd:10' bound to instance 'rsrcregfile' of component 'regfile' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/WorkingStation/Vivado/cse362/Lab 3/regfile.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [D:/WorkingStation/Vivado/cse362/Lab 3/regfile.vhd:24]
+INFO: [Synth 8-3491] module 'ma' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/ma.vhd:10' bound to instance 'rsrcmareg' of component 'ma' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'ma' [D:/WorkingStation/Vivado/cse362/Lab 3/ma.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ma' (8#1) [D:/WorkingStation/Vivado/cse362/Lab 3/ma.vhd:18]
+INFO: [Synth 8-3491] module 'md' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/md.vhd:10' bound to instance 'rsrcmdreg' of component 'md' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'md' [D:/WorkingStation/Vivado/cse362/Lab 3/md.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'md' (9#1) [D:/WorkingStation/Vivado/cse362/Lab 3/md.vhd:21]
+INFO: [Synth 8-3491] module 'ir' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/ir.vhd:10' bound to instance 'rsrcirreg' of component 'ir' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'ir' [D:/WorkingStation/Vivado/cse362/Lab 3/ir.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ir' (10#1) [D:/WorkingStation/Vivado/cse362/Lab 3/ir.vhd:20]
+INFO: [Synth 8-3491] module 'conbit' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/conbit.vhd:10' bound to instance 'rsrcconbit' of component 'conbit' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'conbit' [D:/WorkingStation/Vivado/cse362/Lab 3/conbit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'conbit' (11#1) [D:/WorkingStation/Vivado/cse362/Lab 3/conbit.vhd:16]
+INFO: [Synth 8-3491] module 'control' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/control.vhd:11' bound to instance 'rsrccontrol' of component 'control' [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:296]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/WorkingStation/Vivado/cse362/Lab 3/control.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'control' (12#1) [D:/WorkingStation/Vivado/cse362/Lab 3/control.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'rsrc' (13#1) [D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:23]
+INFO: [Synth 8-3491] module 'rsrc' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/rsrc.vhd:11' bound to instance 'rsrc2' of component 'rsrc' [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:163]
+INFO: [Synth 8-3491] module 'eprom' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/eprom.vhd:8' bound to instance 'erpom1' of component 'eprom' [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'eprom' [D:/WorkingStation/Vivado/cse362/Lab 3/eprom.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'eprom' (14#1) [D:/WorkingStation/Vivado/cse362/Lab 3/eprom.vhd:15]
+INFO: [Synth 8-3491] module 'sram' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/sram.vhd:11' bound to instance 'sram1' of component 'sram' [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'sram' [D:/WorkingStation/Vivado/cse362/Lab 3/sram.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sram' (15#1) [D:/WorkingStation/Vivado/cse362/Lab 3/sram.vhd:20]
+INFO: [Synth 8-3491] module 'vga' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/vga.vhd:6' bound to instance 'vga1' of component 'vga' [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'vga' [D:/WorkingStation/Vivado/cse362/Lab 3/vga.vhd:21]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'D:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.runs/synth_1/.Xil/Vivado-10180-RichardWu/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'myrom' of component 'blk_mem_gen_0' [D:/WorkingStation/Vivado/cse362/Lab 3/vga.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.runs/synth_1/.Xil/Vivado-10180-RichardWu/realtime/blk_mem_gen_0_stub.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'vga' (16#1) [D:/WorkingStation/Vivado/cse362/Lab 3/vga.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'testbench' (17#1) [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.vhd:24]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[31]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[30]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[29]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[28]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[27]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[26]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[25]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[24]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[23]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[22]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[21]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[20]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[19]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[18]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[17]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[16]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[15]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[14]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[13]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[12]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[11]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[10]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[9]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[8]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[7]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[6]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[5]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[4]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[3]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[31]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[30]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[29]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[28]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[27]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[11]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[10]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[9]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[8]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[4]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[3]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[2]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[1]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[0]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[31]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[30]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[29]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[28]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[27]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[26]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[25]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[24]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[23]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[22]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[21]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[20]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[19]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[18]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[17]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[16]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[15]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[14]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[13]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[12]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[11]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[10]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[9]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[8]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[7]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[6]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[5]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[31]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[30]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[29]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[28]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[27]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[26]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[25]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[24]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[23]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[22]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[21]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[20]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[19]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[18]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[17]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[16]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[15]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[14]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[13]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[12]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[11]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[10]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[9]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[8]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[7]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[6]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[5]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 796.281 ; gain = 245.598
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 796.281 ; gain = 245.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 796.281 ; gain = 245.598
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mydcm1'
+Finished Parsing XDC File [d:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mydcm1'
+Parsing XDC File [d:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'vga1/myrom'
+Finished Parsing XDC File [d:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'vga1/myrom'
+Parsing XDC File [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.xdc:1]
+Finished Parsing XDC File [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/WorkingStation/Vivado/cse362/Lab 3/testbench.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testbench_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/testbench_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 938.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 938.008 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 938.008 ; gain = 387.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 938.008 ; gain = 387.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {d:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {d:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 5).
+Applied set_property DONT_TOUCH = true for mydcm1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vga1/myrom. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 938.008 ; gain = 387.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'arbiter'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/WorkingStation/Vivado/cse362/Lab 3/alu.vhd:44]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+INFO: [Synth 8-5545] ROM "data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s3 |                               10 |                               11
+                      s2 |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'arbiter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                       0000000001 |                             0000
+                      s1 |                       0000000010 |                             0001
+                      s2 |                       0000000100 |                             0010
+                      s3 |                       0000001000 |                             0011
+                      s4 |                       0000010000 |                             0100
+                      s5 |                       0000100000 |                             0101
+                      s6 |                       0001000000 |                             0110
+                      s7 |                       0010000000 |                             0111
+                      s8 |                       0100000000 |                             1000
+                      s9 |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 938.008 ; gain = 387.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 78    
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	  13 Input     32 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 9     
+	  42 Input     32 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 18    
+	   2 Input      5 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 12    
+	  32 Input      1 Bit        Muxes := 64    
+	   2 Input      1 Bit        Muxes := 173   
+	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 12    
+	  10 Input      1 Bit        Muxes := 62    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module testbench 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module arbiter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module a 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module c 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	  13 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 1     
+Module shiftcounter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	  32 Input      1 Bit        Muxes := 32    
+Module ma 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module md 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module ir 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module conbit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 81    
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 31    
+Module eprom 
+Detailed RTL Component Info : 
++---Muxes : 
+	  42 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module sram 
+Detailed RTL Component Info : 
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'vga1/b_reg[0]' (FDR) to 'vga1/g_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga1/g_reg[0]' (FDR) to 'vga1/r_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga1/r_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 938.008 ; gain = 387.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-------------+---------------+----------------+
+|Module Name | RTL Object  | Depth x Width | Implemented As | 
++------------+-------------+---------------+----------------+
+|testbench   | erpom1/data | 256x32        | LUT            | 
++------------+-------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------------+-----------+----------------------+-------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives        | 
++------------+-------------------+-----------+----------------------+-------------------+
+|testbench   | sram1/myarray_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | 
++------------+-------------------+-----------+----------------------+-------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mydcm1/clk_out1' to pin 'mydcm1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mydcm1/clk_out2' to pin 'mydcm1/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 938.008 ; gain = 387.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 1013.203 ; gain = 462.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------------+-----------+----------------------+-------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives        | 
++------------+-------------------+-----------+----------------------+-------------------+
+|testbench   | sram1/myarray_reg | Implied   | 1 K x 32             | RAM256X1S x 128   | 
++------------+-------------------+-----------+----------------------+-------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1027.707 ; gain = 477.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1032.504 ; gain = 481.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1032.504 ; gain = 481.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1032.504 ; gain = 481.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1032.504 ; gain = 481.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1032.504 ; gain = 481.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1032.504 ; gain = 481.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |blk_mem_gen_0_bbox_1 |     1|
+|2     |clk_wiz_0_bbox_0     |     1|
+|3     |CARRY4               |    32|
+|4     |LUT1                 |     9|
+|5     |LUT2                 |   421|
+|6     |LUT3                 |   205|
+|7     |LUT4                 |   367|
+|8     |LUT5                 |   366|
+|9     |LUT6                 |  1942|
+|10    |MUXF7                |   512|
+|11    |MUXF8                |   109|
+|12    |RAM256X1S            |   128|
+|13    |FDRE                 |  2546|
+|14    |FDSE                 |     2|
+|15    |IBUF                 |     1|
+|16    |IOBUF                |     3|
+|17    |OBUF                 |    14|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+----------------+----------+------+
+|      |Instance        |Module    |Cells |
++------+----------------+----------+------+
+|1     |top             |          |  6677|
+|2     |  arb1          |arbiter   |   317|
+|3     |  erpom1        |eprom     |    25|
+|4     |  rsrc1         |rsrc      |  3011|
+|5     |    rsrcalu     |alu_1     |    55|
+|6     |    rsrcareg    |a_2       |    32|
+|7     |    rsrccontrol |control_3 |    15|
+|8     |    rsrccreg    |c_4       |    63|
+|9     |    rsrcirreg   |ir_5      |   821|
+|10    |    rsrcmareg   |ma_6      |    30|
+|11    |    rsrcmdreg   |md_7      |    64|
+|12    |    rsrcpc      |pc_8      |    33|
+|13    |    rsrcregfile |regfile_9 |  1898|
+|14    |  rsrc2         |rsrc_0    |  3039|
+|15    |    rsrcalu     |alu       |    55|
+|16    |    rsrcareg    |a         |    34|
+|17    |    rsrccontrol |control   |    15|
+|18    |    rsrccreg    |c         |    63|
+|19    |    rsrcirreg   |ir        |   806|
+|20    |    rsrcmareg   |ma        |    30|
+|21    |    rsrcmdreg   |md        |    96|
+|22    |    rsrcpc      |pc        |    32|
+|23    |    rsrcregfile |regfile   |  1908|
+|24    |  sram1         |sram      |   161|
+|25    |  vga1          |vga       |   101|
++------+----------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1032.504 ; gain = 481.820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 1032.504 ; gain = 340.094
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1032.504 ; gain = 481.820
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 784 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1048.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 131 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:57 . Memory (MB): peak = 1048.566 ; gain = 747.363
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1048.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/WorkingStation/Vivado/cse362/Lab 3/Lab 3.runs/synth_1/testbench.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 15:46:41 2019...

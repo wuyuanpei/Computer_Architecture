@@ -1,0 +1,21 @@
+(SRCTools Version 3.1.1)
+ HexLoc     DecLoc    MachWord   Label        Instruction                Comment
+                                              .org 0                     
+00000000  0000000000  2f400008                la r29, TOP                
+00000004  0000000004  28400000                la r1, 0                   
+00000008  0000000008  309ffff4  TOP:          lar r2, MYVGA              
+0000000c  0000000012  60c42000                add r3, r2, r2             
+00000010  0000000016  68c7fffc                addi r3, r3, -4            
+00000014  0000000020  00000000                nop                        
+00000018  0000000024  68420001                addi r1, r1, 1             
+0000001c  0000000028  403a0001                br r29                     
+00000020  0000000032  f8000000                stop                       
+                                              .org 4096                  ;
+00001000  0000004096            MYD:          .dw 1024                   
+                                              .org 2097152               
+00200000  0002097152            MYVGA:        .dw 524288                 
+
+--- Symbol Table ---
+MYVGA: 2097152
+TOP: 8
+MYD: 4096

@@ -1,0 +1,130 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Oct 14 22:25:33 2019
+| Host         : RichardWu running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file testbench_control_sets_placed.rpt
+| Design       : testbench
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    52 |
+|    Minimum number of control sets                        |    52 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    54 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    52 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    43 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              15 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              28 |           20 |
+| Yes          | No                    | No                     |            1238 |          528 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              41 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+----------------------------------------------+--------------------+------------------+----------------+
+|      Clock Signal     |                 Enable Signal                |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++-----------------------+----------------------------------------------+--------------------+------------------+----------------+
+|  mydcm1/inst/clk_out2 | vga1/eqOp                                    |                    |                1 |              1 |
+|  mydcm1/inst/clk_out2 |                                              | vga1/ltOp          |                1 |              1 |
+|  mydcm1/inst/clk_out1 |                                              |                    |                2 |              3 |
+|  mydcm1/inst/clk_out1 |                                              | rsrc1/rsrcpc/SR[0] |                7 |              8 |
+|  mydcm1/inst/clk_out2 |                                              | vga1/r[3]_i_1_n_0  |                7 |              9 |
+|  mydcm1/inst/clk_out2 | vga1/eqOp                                    | vga1/v             |                4 |              9 |
+|  mydcm1/inst/clk_out2 |                                              | vga1/eqOp          |                5 |             10 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcmareg/address_reg[21]_0            |                    |                4 |             11 |
+|  mydcm1/inst/clk_out2 |                                              |                    |                5 |             12 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/FSM_onehot_state_reg[3]_0[0] |                    |               30 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/read                         |                    |               14 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/md_bus                       |                    |               16 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/E[0]                         | rsrc1/rsrcpc/SR[0] |               16 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/FSM_onehot_state_reg[3][0]   |                    |               15 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[22]_0[0]              |                    |               12 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[22]_1[0]              |                    |               12 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[23]_0[0]              |                    |               12 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[24]_0[0]              |                    |                8 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[24]_1[0]              |                    |               17 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[23]_1[0]              |                    |               11 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[24]_2[0]              |                    |               15 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[22]_2[0]              |                    |               16 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_1[0]              |                    |               10 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[24]_4[0]              |                    |               15 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_11[0]             |                    |               12 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_6[0]              |                    |               21 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_13[0]             |                    |               12 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_12[0]             |                    |               10 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[24]_6[0]              |                    |               22 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_3[0]              |                    |               13 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[24]_5[0]              |                    |               18 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[25]_5[0]              |                    |               14 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_9[0]              |                    |                9 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[24]_3[0]              |                    |               19 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_7[0]              |                    |               22 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[25]_0[0]              |                    |                9 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[25]_3[0]              |                    |               11 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_10[0]             |                    |               16 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[25]_2[0]              |                    |               11 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_0[0]              |                    |               11 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_5[0]              |                    |               14 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_8[0]              |                    |                7 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_4[0]              |                    |               11 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[25]_4[0]              |                    |               20 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[25]_1[0]              |                    |                8 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ir_reg[26]_2[0]              |                    |                9 |             32 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrccontrol/Q[2]                       |                    |               11 |             34 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcirreg/ma_in                        |                    |               10 |             40 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcmareg/address_reg[10]_1            |                    |               32 |            128 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcmareg/address_reg[10]_0            |                    |               32 |            128 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcmareg/address_reg[10]_2            |                    |               32 |            128 |
+|  mydcm1/inst/clk_out1 | rsrc1/rsrcmareg/address_reg[11]_0            |                    |               32 |            128 |
++-----------------------+----------------------------------------------+--------------------+------------------+----------------+
+
+
